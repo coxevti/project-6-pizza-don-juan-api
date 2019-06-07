@@ -13,8 +13,9 @@ class AuthController {
   async login ({ request, response, auth }) {
     try {
       const { email, password } = request.all()
-      const token = await auth.attempt(email, password)
-      return token
+      const { token } = await auth.attempt(email, password)
+      const user = await User.findBy('email', email)
+      return response.status(200).json({ user, token })
     } catch (err) {
       return response.status(401).json({ message: 'Credenciais inválidas.' })
     }
