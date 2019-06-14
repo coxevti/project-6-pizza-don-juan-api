@@ -8,7 +8,7 @@ class SizeSchema extends Schema {
     this.create('sizes', table => {
       table.increments()
       table.string('name').notNullable()
-      table.decimal('price').notNullable()
+      table.string('thumbnail').notNullable()
       table.timestamps()
     })
   }
