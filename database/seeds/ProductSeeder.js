@@ -73,19 +73,19 @@ class ProductSeeder {
     await Type.createMany(listPizzas)
     const listSizes = [
       {
-        name: 'Gigante',
+        name: 'Tamanho Gigante',
         thumbnail: 'gigante.jpg'
       },
       {
-        name: 'Grande',
+        name: 'Tamanho Grande',
         thumbnail: 'grande.jpg'
       },
       {
-        name: 'Média',
+        name: 'Tamanho Média',
         thumbnail: 'media.jpg'
       },
       {
-        name: 'Pequena',
+        name: 'Tamanho Pequena',
         thumbnail: 'pequena.jpg'
       },
       {
@@ -93,15 +93,15 @@ class ProductSeeder {
         thumbnail: '2l.jpg'
       },
       {
-        name: '350ml',
+        name: 'Lata 350ml',
         thumbnail: '350ml.jpg'
       },
       {
-        name: '335ml',
+        name: 'Lata 335ml',
         thumbnail: '335ml.jpg'
       },
       {
-        name: '500ml',
+        name: 'Lata 500ml',
         thumbnail: '500ml.jpg'
       }
     ]
